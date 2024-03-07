@@ -22,22 +22,7 @@ h3 {
     text-align: center;
 }
 
-article {
-    box-sizing: border-box;
-    border: 1px solid grey;
-    padding: 1px 10px 10px 15px;
-    border-radius: 8px;
-    width: 60vw;
-    margin-top: 20px;
-}
 
-article:first-child {
-    border: 0px solid grey;
-}
-
-article:nth-child(2) {
-    margin: 0px;
-}
 
 section {
     justify-content: center;
@@ -81,5 +66,40 @@ img {
 a {
     color: black;
 }
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+article {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: 1px 10px 10px 15px;
+    border-radius: 8px;
+    width: 60vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    view-timeline-name: --article;
+    view-timeline-axis: block;
+
+    animation-timeline: --article;
+    animation-name: show;
+
+    animation-range: entry 25% cover 60%;
+    animation-fill-mode: both;
+}
+
+article:first-child {
+    border: 0px solid grey;
+}
+
 
 
