@@ -1,0 +1,85 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'system-ui';
+    margin: 25px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 56px;
+    margin: 10px 0px;
+}
+
+.cuadricula {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+h3 {
+    text-align: center;
+}
+
+article {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: 1px 10px 10px 15px;
+    border-radius: 8px;
+    width: 60vw;
+    margin-top: 20px;
+}
+
+article:first-child {
+    border: 0px solid grey;
+}
+
+article:nth-child(2) {
+    margin: 0px;
+}
+
+section {
+    justify-content: center;
+}
+
+.container {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+    padding: 5px;
+    gap: 20px;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 30px;
+}
+
+#contact {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+}
+
+img {
+    width: 40px; 
+}
+
+#linkedin {
+    width: 60px;
+}
+
+a {
+    color: black;
+}
+
+

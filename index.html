@@ -6,42 +6,46 @@
     <title>Pau Portfolio</title>
 
     <link rel="icon" type="image/png" href="images/penguin.jpg">
-
-    <style>
-      body {
-        background-color: aqua;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <h1>
-      Pau Martínez i Ríos
-    </h1>
+    <section class="presentacion">
+      <h1>
+        Pau Martínez i Ríos
+      </h1>
+      
+      <p>
+        Buenas me presento. Mi nombre es Pau Martínez y actualmente estoy cursando 
+        el tercer año de Ingeniería Informática en la Universitat Politècnica de Catalunya.
+        Estoy muy motivado en la búsqueda de nuevas oportunidades para aprender y crecer. 
+      </p>
+    </section>
+
+    <button id="contact">
+      <a href="mailto:paumartinezrios@gmail.com">Contact</a>
+    </button>
     
-    <p>Buenas me presento. Mi nombre es Pau Martínez y actualmente estoy cursando 
-      el tercer año de Ingeniería Informática en la Universitat Politècnica de Catalunya.
-      Estoy muy motivado en la búsqueda de nuevas oportunidades para aprender y crecer. 
-    </p>
-
-    <img src="/images/pau.jpeg" style="width: 25%;"> 
-
-    <div>
+    <div class="container">
       <a href="https://github.com/paumartinezrs" target="_blank" rel="noreferrer">
         <img src="/images/git.svg">
       </a>
       <a href="https://www.linkedin.com/in/pau-martinez-i-rios/" target="_blank" rel="noreferrer">
-        <img src="/images/linkedin.svg">
+        <img id="linkedin" src="/images/linkedin.svg">
       </a>
     </div>
     
-    <section>
-      <h2>Proyectos destacables</h2>
-      <p> Algunos de los proyectos, académicos o personales, relacionados con la informática
-        en los que tenido la oportunidad de contribuir.</p>
-        
+    
+      
+    <section class="cuadricula">
       <article>
-          <h3>Interprete de SQL</h3>
+        <h2>Proyectos destacables</h2>
+
+        <p> Algunos de los proyectos, académicos o personales, relacionados con la informática
+          en los que tenido la oportunidad de contribuir.</p>
+      </article>
+      <article>
+          <h3>Intérprete de SQL</h3>
           <p>Gracias a Python y ANTLR4, una herramienta usada para el desarollo de compiladores en la creación de 
           lenguajes de programación, desarolle un interprete del lenguaje SQL. 
           </p>
@@ -109,6 +113,7 @@
             <li>Node.js</li>
             <li>Express</li>
             <li>SQLite</li>
+            <li>JSON</li>
           </ul>
         </footer>
       </article>
@@ -118,7 +123,8 @@
       <button id="cerrar">Cerrar</button>
     </dialog>
 
-    <footer>
+    
+    <footer class="container">
       <button id="abrir">¡Gracias!</button>
     </footer>
     <script>
@@ -128,7 +134,6 @@
       window.cerrar.addEventListener('click', () => {
         window.dialog.close()
       })
-
     </script>
   </body>
 </html>
